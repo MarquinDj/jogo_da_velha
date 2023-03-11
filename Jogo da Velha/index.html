@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <div class="msg">
+      <p class="turn" text-play></p>
+    </div>
+    <div class="tabuleiro" box-tabuleiro>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+      <div class="box" box-event></div>
+    </div>
+
+    <div class="selectX" choose-box-one>
+      <label for="nameX">Digite o nome do jogador 1 (X):</label>
+      <input
+        class="boxText"
+        type="text"
+        id="nameX"
+        name="nameX"
+        placeholder="Nome do Jogador 1"
+        value1
+      />
+      <input type="submit" value="Enviar" class="enviarbtn" register1 />
+    </div>
+
+    <div class="selectY" choose-box-two>
+      <label for="nameY">Digite o nome do jogador 2 (O):</label>
+      <input
+        class="boxText"
+        type="text"
+        id="nameY"
+        name="nameY"
+        placeholder="Nome do Jogador 2"
+        value2
+      />
+      <input type="submit" value="Enviar" class="enviarbtn" register2 />
+    </div>
+
+    <div class="wins" win-box>
+      <p class="wins-msg" win-text></p>
+      <button class="wins-btn" re-game>Jogar Novamente</button>
+    </div>
+  </body>
+</html>
